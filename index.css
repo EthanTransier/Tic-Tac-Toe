@@ -1,0 +1,188 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+.playersTurnContainer{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.winnerText{
+    position: relative;
+    top: 325px;
+}
+.winnerText p{
+    position: absolute;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: purple;
+    font-weight: bold;
+}
+.playerXTurn{
+    background-color: blue;
+    padding-left: 50px;
+    padding-right: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.playerOTurn{
+    background-color: rgb(255, 111, 0);
+    padding-right: 50px;
+    padding-left: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+/* Horizontal Lines for Winning */
+.topHorizontalLine{
+    position: absolute; 
+    width: 650px;
+    height: 15px;
+    display: none;
+}
+.middleHorizontalLine {
+    position: absolute;
+    width: 650px;
+    height: 15px;
+    border-radius: 5px;
+    display: none;
+}
+.bottomHorizontalLine {
+    position: absolute;
+    width: 650px;
+    height: 15px;
+    border-radius: 5px;
+    display: none;
+}
+
+/* Vertical Lines for Winning */
+.firstVerticalLine{
+    position: absolute; 
+    width: 650px;
+    height: 15px;
+    border-radius: 5px;
+    transform: rotate(90deg);
+    display: none;
+}
+.secondVerticalLine {
+    position: absolute;
+    width: 650px;
+    height: 15px;
+    border-radius: 5px;
+    transform-origin: center;
+    transform: rotate(90deg);
+    display: none;
+}
+.thirdVerticalLine {
+    position: absolute;
+    width: 650px;
+    height: 15px;
+    border-radius: 5px;
+    transform: rotate(90deg);
+    transform-origin: center;
+    display: none;
+}
+.topLeftDiagonalLine{
+    position: absolute;
+    width: 675px;
+    height: 675px;
+    pointer-events: none;
+    display: none;
+}
+.topRightDiagonalLine{
+    position: absolute;
+    width: 675px;
+    height: 675px;
+    pointer-events: none;
+    display: none;
+}
+.mainContentContainer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.mainContentContainer div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.title{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.ticTacToeBoard{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    width: 650px;
+    height: 650px;
+    gap: 0px;
+    align-content: center;
+    justify-content: center;
+}
+.ticTacToeBoard div{
+    width: 200px;
+    height: 200px;
+    border-color: black;
+    border-style: solid;
+}
+.square1{
+    border-width: 0px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+}
+.square2{
+    border-width: 0px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+}
+.square3 {
+    border-width: 0px;
+    border-left-width: 5px;
+    border-bottom-width: 5px;
+}
+.square4 {
+    border-width: 0px;
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+}
+.square5 {
+    border-width: 0px;
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+}
+.square6 {
+    border-width: 0px;
+    border-top-width: 5px;
+    border-left-width: 5px;
+    border-bottom-width: 5px;
+}
+.square7 {
+    border-width: 0px;
+    border-top-width: 5px;
+    border-right-width: 5px;
+}
+.square8 {
+    border-width: 0px;
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-left-width: 5px;
+}
+.square9 {
+    border-width: 0px;
+    border-top-width: 5px;
+    border-left-width: 5px;
+}

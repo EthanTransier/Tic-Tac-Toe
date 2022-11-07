@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    
+    <div class="mainContentContainer">
+        <h1 class="title">Tic-Tac-Toe</h1>
+        <div class="playersTurnContainer">
+            <div class="playerXTurn" id="playerXTurn">
+                <span id="playerXWins">0</span>&nbsp;&nbsp;&nbsp;&nbsp;X
+            </div>
+            <div class="playerOTurn" id="playerOTurn">
+                O&nbsp;&nbsp;&nbsp;&nbsp;<span id="playerOWins">0</span>
+            </div>
+        </div>
+        <div class="winnerText" id="winnerText">
+            <p>Player 1 Has Won!</p>
+        </div>
+        <div class="ticTacToeBoard" id="board">
+            <div class="square1" onclick="played('square1Image')">
+                <img src="./images/white.png" alt="" id="square1Image">
+            </div>
+            <div class="square2" onclick="played('square2Image')">
+                <img src="./images/white.png" alt="" id="square2Image">
+                <img src="./images/line.png" alt="" class="topHorizontalLine" id="topHorizontalLine">
+            </div>
+            <div class="square3" onclick="played('square3Image')">
+                <img src="./images/white.png" alt="" id="square3Image">
+            </div>
+            <div class="square4" onclick="played('square4Image')">
+                <img src="./images/white.png" alt="" id="square4Image">
+                <img src="./images/line.png" alt="" class="firstVerticalLine" id="firstVerticalLine">
+            </div>
+            <div class="square5" onclick="played('square5Image')">
+                <img src="./images/white.png" alt="" id="square5Image">
+                <img src="./images/line.png" alt="" class="secondVerticalLine" id="secondVerticalLine">
+                <img src="./images/diagonalLineTopLeft.png" alt="" class="topLeftDiagonalLine" id="topLeftDiagonalLine">
+                <img src="./images/diagonalLineTopRight.png" alt="" class="topRightDiagonalLine" id="topRightDiagonalLine">
+                <img src="./images/line.png" alt="" class="middleHorizontalLine" id="middleHorizontalLine">
+            </div>
+            <div class="square6" onclick="played('square6Image')">
+                <img src="./images/white.png" alt="" id="square6Image">
+                <img src="./images/line.png" alt="" class="thirdVerticalLine" id="thirdVerticalLine">
+            </div>
+            <div class="square7" onclick="played('square7Image')">
+                <img src="./images/white.png" alt="" id="square7Image">
+            </div>
+            <div class="square8" onclick="played('square8Image')">
+                <img src="./images/white.png" alt="" id="square8Image">
+                <img src="./images/line.png" alt="" class="bottomHorizontalLine" id="bottomHorizontalLine">
+            </div>
+            <div class="square9" onclick="played('square9Image')">
+                <img src="./images/white.png" alt="" id="square9Image">
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
