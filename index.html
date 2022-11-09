@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    
+    <img src="./images/spaceBackground.jpg" alt="image of cool space background looking kinda rad ngl" id="backgroundImage">
     <div class="mainContentContainer">
         <h1 class="title">Tic-Tac-Toe</h1>
         <div class="playersTurnContainer">
@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="winnerText" id="winnerText">
-            <p>Player 1 Has Won!</p>
+            <p id="winnerTextStuff"></p>
         </div>
         <div class="ticTacToeBoard" id="board">
             <div class="square1" onclick="played('square1Image')">
@@ -60,6 +60,9 @@
                 <img src="./images/white.png" alt="" id="square9Image">
             </div>
         </div>
+        <button id="resetButton" onclick="reset()">
+            Reset
+        </button>
     </div>
     <script src="./index.js"></script>
 </body>

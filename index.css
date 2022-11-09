@@ -6,9 +6,15 @@ img{
     width: 150px;
     height: 150px;
 }
+#backgroundImage{
+    width: 100%;
+    height: auto;
+    position:fixed;
+    z-index: -10;
+}
 .playersTurnContainer{
     display: flex;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: prompt-regular;
     color: white;
 }
 .winnerText{
@@ -18,9 +24,14 @@ img{
 .winnerText p{
     position: absolute;
     font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: prompt-regular;
     color: purple;
     font-weight: bold;
+    padding-bottom: 1px;
+    padding-right: 1px;
+    padding-left: 1px;
+    padding-top: 1px;
+    z-index: 50;
 }
 .playerXTurn{
     background-color: blue;
@@ -116,8 +127,9 @@ img{
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 45px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: prompt-regular;
     text-align: center;
+    color: white;
 }
 .ticTacToeBoard{
     display: flex;
@@ -185,4 +197,9 @@ img{
     border-width: 0px;
     border-top-width: 5px;
     border-left-width: 5px;
+}
+
+@font-face {
+    font-family: prompt-regular;
+    src: url(./fonts/prompt/Prompt-Regular.ttf);
 }
